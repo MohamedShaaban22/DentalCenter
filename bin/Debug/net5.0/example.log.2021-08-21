@@ -1,0 +1,61 @@
+2021-08-21 16:32:50,063  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-21 16:32:50,141  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-21 16:32:50,144  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-21 16:32:50,148  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-21 16:32:50,151  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2021-08-21 16:34:34,832 DEBUG DentalCenterAPI.Configurations.Logging.Logger.Debug [24] - MESSAGE: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Freelance\DentalCenterAPI\Resourses\89802729_201051884543014_4384895548876914688_n (2).jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at DentalCenterAPI.Services.File.FileService.UploadFile(IFormFile file) in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Services\File\FileService.cs:line 23
+ 2021-08-21 16:38:37,079  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-21 16:38:37,150  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-21 16:38:37,153  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-21 16:38:37,156  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-21 16:38:37,159  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2021-08-21 16:39:07,828 DEBUG DentalCenterAPI.Configurations.Logging.Logger.Debug [24] - MESSAGE: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Resourses\89802729_201051884543014_4384895548876914688_n (2).jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at DentalCenterAPI.Services.File.FileService.UploadFile(IFormFile file) in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Services\File\FileService.cs:line 23
+ 2021-08-21 16:40:06,362  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-21 16:40:06,432  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-21 16:40:06,436  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-21 16:40:06,439  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-21 16:40:06,442  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2021-08-21 16:41:32,970  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-21 16:41:33,042  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-21 16:41:33,045  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-21 16:41:33,048  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-21 16:41:33,051  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2021-08-21 16:42:08,980 DEBUG DentalCenterAPI.Configurations.Logging.Logger.Debug [24] - MESSAGE: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Resourses\cf7c478e-b53a-4261-9d04-cd9807596ae989802729_201051884543014_4384895548876914688_n (2).jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at DentalCenterAPI.Services.File.FileService.UploadFile(IFormFile file) in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Services\File\FileService.cs:line 24
+ 2021-08-21 16:44:44,047  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-21 16:44:44,120  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-21 16:44:44,124  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-21 16:44:44,126  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-21 16:44:44,129  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2021-08-21 16:45:58,441 DEBUG DentalCenterAPI.Configurations.Logging.Logger.Debug [24] - MESSAGE: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Resourses\9393b3ea-6f3d-4253-8bde-f946b8a18fd289802729_201051884543014_4384895548876914688_n (2).jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at DentalCenterAPI.Services.File.FileService.UploadFile(IFormFile file) in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Services\File\FileService.cs:line 24
+ 2021-08-21 16:46:46,038 DEBUG DentalCenterAPI.Configurations.Logging.Logger.Debug [24] - MESSAGE: System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Resourses\48c2ff96-1782-4761-9e55-c7893d526f4489802729_201051884543014_4384895548876914688_n (2).jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at DentalCenterAPI.Services.File.FileService.UploadFile(IFormFile file) in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Services\File\FileService.cs:line 24
+ 2021-08-21 16:51:44,093  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2021-08-21 16:51:44,162  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2021-08-21 16:51:44,165  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2021-08-21 16:51:44,169  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2021-08-21 16:51:44,172  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 

@@ -1,0 +1,2247 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DentalCenterAPI</name>
+    </assembly>
+    <members>
+        <member name="M:DentalCenterAPI.Controllers.Admin.AdminUserController.AdminUserController.Login(DentalCenterAPI.Models.Admin.Business.UserCredentialsBusinessModel)">
+            <summary>
+             User Login by (email Or username) and password
+            </summary>
+            <param name="model"></param>
+            <returns>Return Token contains(userID, userType)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.AdminUserController.AdminUserController.GetAll">
+            <summary>
+            Get List of Admins Details (For Admin)
+            </summary>
+            <returns>Return List of Admins Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.AdminUserController.AdminUserController.GetByID(System.Guid)">
+            <summary>
+            Get Admin Details By UserID (For Admin)
+            </summary>
+            <param name="adminid"></param>
+            <returns>Return Admin Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.AdminUserController.AdminUserController.Add(DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+            Add Admin
+            </summary>
+            <param name="admin"></param>
+            <returns>Return Added Admin GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.AdminUserController.AdminUserController.Update(System.Guid,DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+            Update Admin
+            </summary>
+            <param name="adminid"></param>
+            <param name="admin"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.AdminUserController.AdminUserController.Delete(System.Guid)">
+            <summary>
+            Delete Admin
+            </summary>
+            <param name="adminid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Appointment.AdminAppointmentController.GetAll(System.String,System.String)">
+            <summary>
+            Get All Appointments With Patient Details By Type, IsNew With Search
+            </summary>
+            <param name="type">tourism, exist, new</param>
+            <param name="search">BranchName, ServiceName, PhoneNumber, PatientName</param>
+            <returns>Return List of Appointments</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Appointment.AdminAppointmentController.GetByID(System.Guid)">
+            <summary>
+            Get Appointment With Patient Details By appointmentID
+            </summary>
+            <param name="appointmentid"></param>
+            <returns>Return Appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Appointment.AdminAppointmentController.Delete(System.Guid)">
+            <summary>
+            Get Appointment With Patient Details By appointmentID
+            </summary>
+            <param name="appointmentid"></param>
+            <returns>Return Appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Blog.AdminBlogController.GetAll">
+            <summary>
+            Get List of Blogs
+            </summary>
+            <returns>Return List of Blogs</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Blog.AdminBlogController.GetByID(System.Guid)">
+            <summary>
+            Get Blog Details By BlogsID
+            </summary>
+            <param name="blogid"></param>
+            <returns>Return Blog Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Blog.AdminBlogController.Add(DentalCenterAPI.Models.Blog.Business.BlogBusinessModel)">
+            <summary>
+            Add Blog with list of blog details
+            </summary>
+            <param name="blog"></param>
+            <returns>Return Added Blog GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Blog.AdminBlogController.Update(System.Guid,DentalCenterAPI.Models.Blog.Business.BlogBusinessModel)">
+            <summary>
+            Update Blog 
+            </summary>
+            <param name="blogid"></param>
+            <param name="blog"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Blog.AdminBlogController.Delete(System.Guid)">
+            <summary>
+            Delete Blog By BlogID
+            </summary>
+            <param name="blogid"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Branch.AdminBranchController.GetAllForDropdown">
+            <summary>
+            Get List of Branches for Dropdown
+            </summary>
+            <returns>Return List of Branches Dropdown That Contains (ID And Name)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Branch.AdminBranchController.GetAll">
+            <summary>
+            Get List of Branches
+            </summary>
+            <returns>Return List of Branches</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Branch.AdminBranchController.GetByID(System.Guid)">
+            <summary>
+            Get Branch Details By BranchID
+            </summary>
+            <param name="branchid"></param>
+            <returns>Return Branch Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Branch.AdminBranchController.Add(DentalCenterAPI.Models.Branch.Basic.BranchBasicModel)">
+            <summary>
+            Add Branch
+            </summary>
+            <param name="branch"></param>
+            <returns>Return Added Branch GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Branch.AdminBranchController.Update(System.Guid,DentalCenterAPI.Models.Branch.Basic.BranchBasicModel)">
+            <summary>
+            Update Branch
+            </summary>
+            <param name="branchid"></param>
+            <param name="branch"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Branch.AdminBranchController.Delete(System.Guid)">
+            <summary>
+            Delete Branch
+            </summary>
+            <param name="branchid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.CommonQuestion.AdminCommonQuestionController.GetAll(System.String,System.String)">
+            <summary>
+            Get List of Common Questions
+            </summary>
+            <param name="type"></param>
+            <param name="search">type, question, answer</param>
+            <returns>Return List of Common Questions</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.CommonQuestion.AdminCommonQuestionController.GetByID(System.Guid)">
+            <summary>
+            Get Common Question Details By Common QuestionID
+            </summary>
+            <param name="commonquestionid"></param>
+            <returns>Return Branch Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.CommonQuestion.AdminCommonQuestionController.Add(DentalCenterAPI.Models.CommonQuestion.Basic.CommonQuestionBasicModel)">
+            <summary>
+            Add Branch
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Branch GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.CommonQuestion.AdminCommonQuestionController.Update(System.Guid,DentalCenterAPI.Models.CommonQuestion.Basic.CommonQuestionBasicModel)">
+            <summary>
+            Update Common Question
+            </summary>
+            <param name="commonquestionid"></param>
+            <param name="model"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.CommonQuestion.AdminCommonQuestionController.Delete(System.Guid)">
+            <summary>
+            Delete Common Question
+            </summary>
+            <param name="commonquestionid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.DoctorPatient.AdminDoctorPatientController.GetALLByDoctorID(System.Guid)">
+            <summary>
+            Get All DoctorsPatients 
+            </summary>
+            <param name="doctorid"></param>
+            <returns>Return List of Doctor Patients</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.DoctorPatient.AdminDoctorPatientController.Add(DentalCenterAPI.Models.DoctorPatient.Basic.DoctorPatientBasicModel)">
+            <summary>
+            Add DoctorPatient
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Doctor Patient GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.DoctorPatient.AdminDoctorPatientController.Update(System.Guid,DentalCenterAPI.Models.DoctorPatient.Basic.DoctorPatientBasicModel)">
+            <summary>
+            Update Doctor Patient
+            </summary>
+            <param name="doctorpatientid"></param>
+            <param name="model"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.DoctorPatient.AdminDoctorPatientController.Delete(System.Guid)">
+            <summary>
+            Delete Doctor Patient
+            </summary>
+            <param name="doctorpatientid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Doctor.AdminDoctorController.GetAll(System.Boolean,System.String,System.String)">
+            <summary>
+            Get All Doctors For(Admin, Web)
+            </summary>
+            <param name="orderbyasc"></param>
+            <param name="sortby">Name, ReferalNumber</param>
+            <param name="search">Name, ReferalNumber</param>
+            <returns>Return List of Doctors</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Doctor.AdminDoctorController.GetAllForDropdown">
+            <summary>
+            Get All Doctors (NAme,ID) For Dropsown (For Admin)
+            </summary>
+            <returns>Return List of Doctors(ID, Name)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Doctor.AdminDoctorController.GetByID(System.Guid)">
+            <summary>
+            Get Doctor With Patients, Blogs By Doctor ID
+            </summary>
+            <param name="doctorid"></param>
+            <returns>Return Doctor Details with Patients, Blogs </returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Doctor.AdminDoctorController.Add(DentalCenterAPI.Models.Doctor.Basic.DoctorBasicModel)">
+            <summary>
+            Add Doctor
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Doctor GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Doctor.AdminDoctorController.Upadte(System.Guid,DentalCenterAPI.Models.Doctor.Basic.DoctorBasicModel)">
+            <summary>
+            Update Doctor
+            </summary>
+            <param name="doctorid"></param>
+            <param name="model"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Doctor.AdminDoctorController.Delete(System.Guid)">
+            <summary>
+            Delete With Patients, Blogs
+            </summary>
+            <param name="doctorid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.FamousSection.AdminFamousSectionController.GetAll(System.String)">
+            <summary>
+            Get All FamousSection Ordered by Name
+            </summary>
+            <param name="search">name</param>
+            <returns>Return List of FamousSection Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.FamousSection.AdminFamousSectionController.GetByID(System.Guid)">
+            <summary>
+            Get FamousSection Details by ID with list of FamousSection images
+            </summary>
+            <param name="famousSectionid"></param>
+            <returns>Return FamousSection Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.FamousSection.AdminFamousSectionController.Add(DentalCenterAPI.Models.FamousSection.Business.FamousSectionBusinessModel)">
+            <summary>
+            Add FamousSection with list of FamousSection Images
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added FamousSectionID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.FamousSection.AdminFamousSectionController.Update(System.Guid,DentalCenterAPI.Models.FamousSection.Business.FamousSectionBusinessModel)">
+            <summary>
+            Update FamousSection with list of FamousSection Images
+            </summary>
+            <param name="famousSectionid"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.FamousSection.AdminFamousSectionController.Delete(System.Guid)">
+            <summary>
+            Delete FamousSection with list of FamousSection images (For Admin)
+            </summary>
+            <param name="famousSectionid"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Gallery.AdminGalleryController.GetAll(System.String,System.String)">
+            <summary>
+            Get List of Gallery Images
+            </summary>
+            <param name="search">By Type With Default value (All)</param>
+            <param name="sortby">Date Asc, Desc</param>
+            <returns>Return List of Gallery Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Gallery.AdminGalleryController.Add(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.Gallery.Basic.GalleryBasicModel})">
+            <summary>
+            Add List of Gallerys with same type
+            </summary>
+            <param name="type"></param>
+            <param name="gallerys"></param>
+            <returns>Return Added Rowa Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Gallery.AdminGalleryController.Update(System.String,System.Guid)">
+            <summary>
+            Update Gallery Image Type
+            </summary>
+            <param name="type"></param>
+            <param name="galleryid"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Gallery.AdminGalleryController.UpdateIsFavorite(System.String,System.Guid,System.Boolean)">
+            <summary>
+            Update Gallery Image IsFavorite
+            </summary>
+            <param name="type"></param>
+            <param name="galleryid"></param>
+            <param name="isfavorite"></param>
+            <returns>Return Updated rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Gallery.AdminGalleryController.Delete(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.Gallery.Basic.GalleryBasicModel})">
+            <summary>
+            Delete List of Gallery Images
+            </summary>
+            <param name="galleryIDs"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Gallery.AdminGalleryController.Delete(System.Guid)">
+            <summary>
+            Delete Gallery Images By ID
+            </summary>
+            <param name="galleryid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HappyPatient.AdminHappyPatientController.GetAll(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            Get All Happy Patients By Type(video, review) Ordered by InsertDate(By Default), IsFavorite, search (For Admin)
+            </summary>
+            <param name="type">video, review</param>
+            <param name="sortby">insertdate, isfavorite, name, job, comment</param>
+            <param name="search">name, job, comment</param>
+            <param name="orderbyasc">True, False</param>
+            <returns>Return Two Lists of Happy Paitents</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HappyPatient.AdminHappyPatientController.GetByID(System.Guid,System.String)">
+            <summary>
+            Get Happy Patient By ID 
+            </summary>
+            <param name="happypatientid"></param>
+            <param name="type">video, review</param>
+            <returns>Return Happy Patient Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HappyPatient.AdminHappyPatientController.Add(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.HappyPatient.Basic.HappyPatientBasicModel})">
+            <summary>
+            Add List of Happy Patients 
+            </summary>
+            <param name="type">video, review</param>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HappyPatient.AdminHappyPatientController.UpdateIsFavorite(System.Guid,System.Boolean)">
+            <summary>
+            Update Happy Patient IsFavorite 
+            </summary>
+            <param name="happypatientid"></param>
+            <param name="isfavorite"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HappyPatient.AdminHappyPatientController.Update(System.Guid,System.String,DentalCenterAPI.Models.HappyPatient.Basic.HappyPatientBasicModel)">
+            <summary>
+            Update Happy Patient IsFavorite 
+            </summary>
+            <param name="happypatientid"></param>
+            <param name="type">video, review</param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HappyPatient.AdminHappyPatientController.Delete(System.Guid)">
+            <summary>
+            Delete Happy Patient (For Admin)
+            </summary>
+            <param name="happypatientid"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HomeCounter.HomeCounterController.GetFirst">
+            <summary>
+            Get All Happy Patients By Type(video, review) Ordered by InsertDate(By Default), IsFavorite, search (For Admin)
+            </summary>
+            <returns>Return Home Counter Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.HomeCounter.HomeCounterController.Update(System.Guid,DentalCenterAPI.Models.HomeCounter.Basic.HomeCounterBasicModel)">
+            <summary>
+            Update Home Counter BY ID(For Admin)
+            </summary>
+            <param name="homecounterid"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.News.AdminNewsController.GetAll">
+            <summary>
+            Get All News Ordered by Date desc 
+            </summary>
+            <returns>Return List of News Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.News.AdminNewsController.GetByID(System.Guid)">
+            <summary>
+            Get News Details by ID with list of news images
+            </summary>
+            <param name="newsid"></param>
+            <returns>Return News Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.News.AdminNewsController.Add(DentalCenterAPI.Models.News.Business.NewsBusinessModel)">
+            <summary>
+            Add News with list of News Images 
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added NewsID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.News.AdminNewsController.Update(System.Guid,DentalCenterAPI.Models.News.Business.NewsBusinessModel)">
+            <summary>
+            Update news Details with list of newsimages by delete list then add it again 
+            </summary>
+            <param name="newsid"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.News.AdminNewsController.Delete(System.Guid)">
+            <summary>
+            Delete news with list of news images 
+            </summary>
+            <param name="newsid"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.ServiceImage.AdminServiceImageController.GetAll(System.String,System.String)">
+            <summary>
+            Get List of Gallery Images
+            </summary>
+            <param name="servicename"></param>
+            <param name="sortby">Date Asc, Desc</param>
+            <returns>Return List of Gallery Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.ServiceImage.AdminServiceImageController.Add(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel})">
+            <summary>
+            Add List of ServiceImages by ServiceName 
+            </summary>
+            <param name="servicename"></param>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.ServiceImage.AdminServiceImageController.Update(System.String,System.Guid,DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel)">
+            <summary>
+            Update ServiceImages ServiceName,Before, After Images Path 
+            </summary>
+            <param name="servicename"></param>
+            <param name="serviceimageid"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.ServiceImage.AdminServiceImageController.Delete(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel})">
+            <summary>
+            Delete List of ServiceImages By ServiceImagesIDs (For Admin)
+            </summary>
+            <param name="serviceImagesIDs"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.ServiceImage.AdminServiceImageController.Delete(System.Guid)">
+            <summary>
+            Delete Gallery Images By ID
+            </summary>
+            <param name="serviceimageid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Service.AdminServiceController.GetAll(System.String,System.Boolean)">
+            <summary>
+            Get All services Ordered by name with search
+            </summary>
+            <param name="search">name, info</param>
+            <param name="sortbyasc">name = True, false</param>
+            <returns>Return List of service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Service.AdminServiceController.GetByID(System.Guid)">
+            <summary>
+            Get service By ID
+            </summary>
+            <param name="serviceid"></param>
+            <returns>Return service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Service.AdminServiceController.GetByname(System.String)">
+            <summary>
+            Get service By name
+            </summary>
+            <param name="name"></param>
+            <returns>Return service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Service.AdminServiceController.Add(DentalCenterAPI.Models.Service.Basic.ServiceBasicModel)">
+            <summary>
+            Add service
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added service Guid</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Service.AdminServiceController.Update(System.Guid,DentalCenterAPI.Models.Service.Basic.ServiceBasicModel)">
+            <summary>
+            Update service
+            </summary>
+            <param name="serviceid"></param>
+            <param name="model"></param>
+            <returns>Return Updated rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Service.AdminServiceController.Delete(System.Guid)">
+            <summary>
+            Delete service
+            </summary>
+            <param name="serviceid"></param>
+            <returns>Return Deleted rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Subscribtion.AdminSubscribtionController.GetAll">
+            <summary>
+            Get List of Subscribtion
+            </summary>
+            <returns>Return List of Subscribtion</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Subscribtion.AdminSubscribtionController.Add(DentalCenterAPI.Models.Subscribtion.Basic.SubscribtionBasicModel)">
+            <summary>
+            Add Subscribtion
+            </summary>
+            <param name="subscribtion"></param>
+            <returns>Return Added Subscribtion GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Admin.Subscribtion.AdminSubscribtionController.Delete(System.Guid)">
+            <summary>
+            Delete Subscribtion
+            </summary>
+            <param name="subscribtionid"></param>
+            <returns>Return Deleted rows count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.File.FileController.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save file to Server at resourses folder 
+            </summary>
+            <param name="file"></param>
+            <returns>Return saved file path</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.File.FileController.UploadFiles(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Save files to Server at resourses folder 
+            </summary>
+            <param name="files"></param>
+            <returns>Return List of aved files paths</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Appointment.WebAppointmentController.Add(System.String,DentalCenterAPI.Models.Appointment.Business.AppointmentAddBusinessModel)">
+            <summary>
+            Get Appointment With Patient Details By appointmentID
+            </summary>
+            <param name="type">tourism, exist, new</param>
+            <param name="model"></param>
+            <returns>Return Appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Blog.WebBlogController.GetAll">
+            <summary>
+            Get List of Blogs
+            </summary>
+            <returns>Return List of Blogs</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Blog.WebBlogController.GetByID(System.Guid)">
+            <summary>
+            Get Blog Details By BlogsID
+            </summary>
+            <param name="blogid"></param>
+            <returns>Return Blog Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Branch.WebBranchController.GetAllForDropDown">
+            <summary>
+            Get List of Branches for Dropdown
+            </summary>
+            <returns>Return List of Branches Dropdown That Contains (ID And Name)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Branch.WebBranchController.GetAll">
+            <summary>
+            Get List of Branches
+            </summary>
+            <returns>Return List of Branches</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.CommonQuestion.WebCommonQuestionController.GetAll(System.String,System.String)">
+            <summary>
+            Get List of Common Questions
+            </summary>
+            <param name="type"></param>
+            <param name="search">type, question, answer</param>
+            <returns>Return List of Common Questions</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.DoctorPatient.WebDoctorPatientController.GetByID(System.Guid)">
+            <summary>
+            Get All Doctors Patients By DoctorID
+            </summary>
+            <param name="doctorid"></param>
+            <returns>Return List of Doctor Patients</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Doctor.WebDoctorController.GetAllExplore">
+            <summary>
+            Get All Doctors (Name,ID, Image) For for homepage (For Web)
+            </summary>
+            <returns>Return List of Doctors(Name,ID, Image)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Doctor.WebDoctorController.GetAll">
+            <summary>
+            Get All Doctors 
+            </summary>
+            <returns>Return List of Doctors</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Doctor.WebDoctorController.GetByyID(System.Guid)">
+            <summary>
+            Get Doctor With Patients, Blogs By Doctor ID (for Admin, Web)
+            </summary>
+            <param name="doctorid"></param>
+            <returns>Return Doctor Details with Patients, Blogs </returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.FamousSection.WebFamousSectionController.GetAll">
+            <summary>
+            Get All FamousSection Ordered by Name
+            </summary>
+            <returns>Return List of FamousSection Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.FamousSection.WebFamousSectionController.GetByID(System.Guid)">
+            <summary>
+            Get FamousSection Details by ID with list of FamousSection images
+            </summary>
+            <param name="famousSectionid"></param>
+            <returns>Return FamousSection Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Gallery.WebGalleryController.GetAll(System.String,System.String)">
+            <summary>
+            Get List of Gallery Images
+            </summary>
+            <param name="search">By Type With Default value (All)</param>
+            <param name="sortby">Date Asc, Desc</param>
+            <returns>Return List of Gallery Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.HappyPatient.WebHappyPatientController.GetAll(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Get All Happy Patients With Two Lists (Favorite, All Videos) Ordered by Date, Favorite
+            </summary>
+            <param name="type">video, review</param>
+            <param name="isfavorite">for review only</param>
+            <returns>Return Two Lists of Happy Paitents Favorite, Normal</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.HappyPatient.WebHappyPatientController.GetRandomOne(System.String)">
+            <summary>
+            Get Random Happy Patient By Type
+            </summary>
+            <param name="type">video, review</param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.HomePage.WebHomePageController.GetAll(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Get Home Page (Counters, Favorite Gallery, Home Doctors, Favorite HappyPatients Revirews) (For Web)
+            </summary>
+            <returns>Return Home Page Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.ServiceImage.WebServiceImageController.GetAll(System.String,System.String)">
+            <summary>
+            Get List of Gallery Images
+            </summary>
+            <param name="servicename"></param>
+            <param name="sortby">Date Asc, Desc</param>
+            <returns>Return List of Gallery Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Controllers.Web.Subscribtion.WebSubscribtionController.Add(DentalCenterAPI.Models.Subscribtion.Basic.SubscribtionBasicModel)">
+            <summary>
+            Add Subscribtion
+            </summary>
+            <param name="subscribtion"></param>
+            <returns>Return Added Subscribtion GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.DentalCenterAPI_Controllers_Web_News.WebNewsController.GetAll">
+            <summary>
+            Get All News Ordered by Date desc 
+            </summary>
+            <returns>Return List of News Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.DentalCenterAPI_Controllers_Web_News.WebNewsController.GetByID(System.Guid)">
+            <summary>
+            Get News Details by ID with list of news images
+            </summary>
+            <param name="newsid"></param>
+            <returns>Return News Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.DentalCenterAPI.Controllers.Web.Service.WebServiceController.GetAll">
+            <summary>
+            Get All services Ordered by name
+            </summary>
+            <returns>Return List of service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.DentalCenterAPI.Controllers.Web.Service.WebServiceController.GetByID(System.Guid)">
+            <summary>
+            Get service By ID
+            </summary>
+            <param name="serviceid"></param>
+            <returns>Return service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.DentalCenterAPI.Controllers.Web.Service.WebServiceController.GetByname(System.String)">
+            <summary>
+            Get service By name
+            </summary>
+            <param name="name"></param>
+            <returns>Return service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.LoginAsync(DentalCenterAPI.Models.Admin.Business.UserCredentialsBusinessModel)">
+            <summary>
+            Admin Login By ( email Or username ) and Password (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Logged User Token</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.GetAllAsync">
+            <summary>
+            Get List of Admins Details (For Admin)
+            </summary>
+            <returns>Return List of Admins Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Admin Details By UserID (For Admin)
+            </summary>
+            <param name="adminID"></param>
+            <returns>Return Admin Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.IsUserNameExistAsync(System.String)">
+            <summary>
+            Check UserName Existance (For Admin)
+            </summary>
+            <param name="userName"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.IsUserNameExistAsync(System.String,System.Guid)">
+            <summary>
+            Check UserName Existance and exclude current admin (For Admin)
+            </summary>
+            <param name="userName"></param>
+            <param name="excludedAdminID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.IsEmailExistAsync(System.String)">
+            <summary>
+            Check Email Existance (For Admin)
+            </summary>
+            <param name="email"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.IsEmailExistAsync(System.String,System.Guid)">
+            <summary>
+            Check Email Existance and exclude current admin (For Admin)
+            </summary>
+            <param name="email"></param>
+            <param name="excludedAdminID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Admin Existance (For Admin)
+            </summary>
+            <param name="adminID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.AddAsync(DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+            Add Admin  (For Admin)
+            </summary>
+            <param name="admin"></param>
+            <returns>Return Added Admin GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.UpdateAsync(DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+            Update Admin  (For Admin)
+            </summary>
+            <param name="admin"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Admin  (For Admin)
+            </summary>
+            <param name="adminID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.AdminService.GenerateToken(DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+             Generate Token with (UserID, UserType = admin)
+            </summary>
+            <param name="identityUser"></param>
+            <returns>Rerurn Generated Token</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.LoginAsync(DentalCenterAPI.Models.Admin.Business.UserCredentialsBusinessModel)">
+            <summary>
+            Admin Login By ( email Or username ) and Password (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Logged User Token</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.GetAllAsync">
+            <summary>
+            Get List of Admins Details By UserID (For Admin)
+            </summary>
+            <returns>Return List of Admins Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Admin Details By UserID (For Admin)
+            </summary>
+            <param name="adminID"></param>
+            <returns>Return Admin Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.IsUserNameExistAsync(System.String)">
+            <summary>
+            Check UserName Existance (For Admin)
+            </summary>
+            <param name="userName"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.IsUserNameExistAsync(System.String,System.Guid)">
+            <summary>
+            Check UserName Existance and exclude current admin (For Admin)
+            </summary>
+            <param name="userName"></param>
+            <param name="excludedAdminID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.IsEmailExistAsync(System.String)">
+            <summary>
+            Check Email Existance (For Admin)
+            </summary>
+            <param name="email"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.IsEmailExistAsync(System.String,System.Guid)">
+            <summary>
+            Check Email Existance and exclude current admin (For Admin)
+            </summary>
+            <param name="email"></param>
+            <param name="excludedAdminID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Admin Existance (For Admin)
+            </summary>
+            <param name="adminID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.AddAsync(DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+            Add Admin  (For Admin)
+            </summary>
+            <param name="admin"></param>
+            <returns>Return Added Admin GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.UpdateAsync(DentalCenterAPI.Models.Admin.Basic.AdminBasicModel)">
+            <summary>
+            Update Admin  (For Admin)
+            </summary>
+            <param name="admin"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Admin.IAdminService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Admin  (For Admin)
+            </summary>
+            <param name="adminID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.AppointmentService.GetAllByTypeAsync(System.String,System.String)">
+            <summary>
+            Get All Appointments With Patient Details By Type, IsNew With Search (For Admin)
+            </summary>
+            <param name="type"></param>
+            <param name="search">BranchName, ServiceName, PhoneNumber, PatientName</param>
+            <returns>Return List of appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.AppointmentService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Appointment With Patient Details By appointmentID (For Admin)
+            </summary>
+            <param name="appointmentID"></param>
+            <returns>Return appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.AppointmentService.AddAsync(DentalCenterAPI.Models.Appointment.Business.AppointmentAddBusinessModel)">
+            <summary>
+            Add Appointment With Patient (For Web)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Row GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.AppointmentService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Appointment With Patient Details (For Admin)
+            </summary>
+            <param name="appointmentID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.IAppointmentService.GetAllByTypeAsync(System.String,System.String)">
+            <summary>
+            Get All Appointments With Patient Details By Type, IsNew With Search (For Admin)
+            </summary>
+            <param name="type"></param>
+            <param name="search">BranchName, ServiceName, PhoneNumber, PatientName</param>
+            <returns>Return List of appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.IAppointmentService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Appointment With Patient Details By appointmentID (For Admin)
+            </summary>
+            <param name="appointmentID"></param>
+            <returns>Return appointment Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.IAppointmentService.AddAsync(DentalCenterAPI.Models.Appointment.Business.AppointmentAddBusinessModel)">
+            <summary>
+            Add Appointment With Patient (For Web)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Row GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Appointment.IAppointmentService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Appointment With Patient Details (For Admin)
+            </summary>
+            <param name="appointmentID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.BlogDetails.BlogDetailsService.AddAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.BlogDetails.Business.BlogDetailsBusinessModel})">
+            <summary>
+            Add Blog Details (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.BlogDetails.BlogDetailsService.UpdateAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.BlogDetails.Business.BlogDetailsBusinessModel})">
+            <summary>
+            Update Blog Details (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.BlogDetails.IBlogDetailsService.AddAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.BlogDetails.Business.BlogDetailsBusinessModel})">
+            <summary>
+            Add Blog Details (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.BlogDetails.IBlogDetailsService.UpdateAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.BlogDetails.Business.BlogDetailsBusinessModel})">
+            <summary>
+            Update Blog Details (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.BlogService.GetAllAsync">
+            <summary>
+            Get List of Blogs (For Admin, Web)
+            </summary>
+            <returns>Return List of Blogs</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.BlogService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Blog Details By BlogsID (For Admin, Web)
+            </summary>
+            <param name="blogID"></param>
+            <returns>Return Blog Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.BlogService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Blog Existance (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.BlogService.AddAsync(DentalCenterAPI.Models.Blog.Business.BlogBusinessModel)">
+            <summary>
+            Add Blog (For Admin)
+            </summary>
+            <param name="blog"></param>
+            <returns>Return Added Blog GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.BlogService.UpdateAsync(DentalCenterAPI.Models.Blog.Business.BlogBusinessModel)">
+            <summary>
+            Update Blog (For Admin)
+            </summary>
+            <param name="blog"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.BlogService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Blog (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.IBlogService.GetAllAsync">
+            <summary>
+            Get List of Blogs (For Admin, Web)
+            </summary>
+            <returns>Return List of Blogs</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.IBlogService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Blog Details By BlogsID (For Admin, Web)
+            </summary>
+            <param name="blogID"></param>
+            <returns>Return Blog Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.IBlogService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Blog Existance (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.IBlogService.AddAsync(DentalCenterAPI.Models.Blog.Business.BlogBusinessModel)">
+            <summary>
+            Add Blog (For Admin)
+            </summary>
+            <param name="blog"></param>
+            <returns>Return Added Blog GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.IBlogService.UpdateAsync(DentalCenterAPI.Models.Blog.Business.BlogBusinessModel)">
+            <summary>
+            Update Blog (For Admin)
+            </summary>
+            <param name="branch"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Blog.IBlogService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Blog (For Admin)
+            </summary>
+            <param name="blogID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.GetAllForDropdownAsync">
+            <summary>
+            Get List of Branches for Dropdown (ID, Name) (For Admin, Web)
+            </summary>
+            <returns>Return List of Branches Dropdown(ID, Name)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.GetAllAsync">
+            <summary>
+            Get List of Branches for Dropdown (For Admin, Web)
+            </summary>
+            <returns>Return List of Branches</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Branch Details By BranchID (For Admin)
+            </summary>
+            <param name="branchID"></param>
+            <returns>Return Branch Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Branch Existance (For Admin)
+            </summary>
+            <param name="branchID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.AddAsync(DentalCenterAPI.Models.Branch.Basic.BranchBasicModel)">
+            <summary>
+            Add Branch  (For Admin)
+            </summary>
+            <param name="branch"></param>
+            <returns>Return Added Branch GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.UpdateAsync(DentalCenterAPI.Models.Branch.Basic.BranchBasicModel)">
+            <summary>
+            Update Branch  (For Admin)
+            </summary>
+            <param name="branch"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.BranchService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Branch  (For Admin)
+            </summary>
+            <param name="branchID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.GetAllForDropdownAsync">
+            <summary>
+            Get List of Branches for Dropdown (For Admin, Web)
+            </summary>
+            <returns>Return List of Branches Dropdown</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.GetAllAsync">
+            <summary>
+            Get List of Branches for Dropdown (For Admin, Web)
+            </summary>
+            <returns>Return List of Branches</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Branch Details By BranchID (For Admin)
+            </summary>
+            <param name="branchID"></param>
+            <returns>Return Branch Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Branch Existance (For Admin)
+            </summary>
+            <param name="branchID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.AddAsync(DentalCenterAPI.Models.Branch.Basic.BranchBasicModel)">
+            <summary>
+            Add Branch  (For Admin)
+            </summary>
+            <param name="branch"></param>
+            <returns>Return Added Branch GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.UpdateAsync(DentalCenterAPI.Models.Branch.Basic.BranchBasicModel)">
+            <summary>
+            Update Branch  (For Admin)
+            </summary>
+            <param name="branch"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Branch.IBranchService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Branch  (For Admin)
+            </summary>
+            <param name="branchID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.CommonQuestionService.GetAllAsync(System.String,System.String)">
+            <summary>
+            Get All CommonQuestions (For Admin, Web)
+            </summary>
+            <param name="type"></param>
+            <param name="search">type, question, answer</param>
+            <returns>Return List of CommonQuestion</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.CommonQuestionService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get CommonQuestion Details By commonQuestionID (For Admin)
+            </summary>
+            <param name="commonQuestionID"></param>
+            <returns>Return CommonQuestion Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.CommonQuestionService.IsExistAsync(System.Guid)">
+            <summary>
+            Check CommonQuestion Existance (For Admin)
+            </summary>
+            <param name="commonQuestionID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.CommonQuestionService.AddAsync(DentalCenterAPI.Models.CommonQuestion.Basic.CommonQuestionBasicModel)">
+            <summary>
+            Add CommonQuestion  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added CommonQuestion GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.CommonQuestionService.UpdateAsync(DentalCenterAPI.Models.CommonQuestion.Basic.CommonQuestionBasicModel)">
+            <summary>
+            Update CommonQuestion  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.CommonQuestionService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete CommonQuestion  (For Admin)
+            </summary>
+            <param name="commonQuestionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.ICommonQuestionService.GetAllAsync(System.String,System.String)">
+            <summary>
+            Get All CommonQuestions (For Admin, Web)
+            </summary>
+            <param name="type"></param>
+            <param name="search">type, question, answer</param>
+            <returns>Return List of CommonQuestion</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.ICommonQuestionService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get CommonQuestion Details By commonQuestionID (For Admin)
+            </summary>
+            <param name="commonQuestionID"></param>
+            <returns>Return CommonQuestion Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.ICommonQuestionService.IsExistAsync(System.Guid)">
+            <summary>
+            Check CommonQuestion Existance (For Admin)
+            </summary>
+            <param name="commonQuestionID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.ICommonQuestionService.AddAsync(DentalCenterAPI.Models.CommonQuestion.Basic.CommonQuestionBasicModel)">
+            <summary>
+            Add CommonQuestion  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added CommonQuestion GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.ICommonQuestionService.UpdateAsync(DentalCenterAPI.Models.CommonQuestion.Basic.CommonQuestionBasicModel)">
+            <summary>
+            Update CommonQuestion  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.CommonQuestion.ICommonQuestionService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete CommonQuestion  (For Admin)
+            </summary>
+            <param name="commonQuestionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.DoctorPatientService.GetAllAsync(System.Guid)">
+            <summary>
+            Get All Doctors Patients For(Admin)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return List of Doctor Patients</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.DoctorPatientService.AddAsync(DentalCenterAPI.Models.DoctorPatient.Basic.DoctorPatientBasicModel)">
+            <summary>
+            Add Doctor Patients(for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.DoctorPatientService.UpdateAsync(DentalCenterAPI.Models.DoctorPatient.Basic.DoctorPatientBasicModel)">
+            <summary>
+            Update Doctor Patient(for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.DoctorPatientService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Patient By doctorPatientID(for admin)
+            </summary>
+            <param name="doctorPatientID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.IDoctorPatientService.GetAllAsync(System.Guid)">
+            <summary>
+            Get All Doctors Patients For(Admin)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return List of Doctor Patients</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.IDoctorPatientService.AddAsync(DentalCenterAPI.Models.DoctorPatient.Basic.DoctorPatientBasicModel)">
+            <summary>
+            Add Doctor Patients(for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.IDoctorPatientService.UpdateAsync(DentalCenterAPI.Models.DoctorPatient.Basic.DoctorPatientBasicModel)">
+            <summary>
+            Update Doctor Patient(for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.DoctorPatient.IDoctorPatientService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Patient By doctorPatientID(for admin)
+            </summary>
+            <param name="doctorPatientID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.GetAllAsync(System.Boolean,System.String,System.String)">
+            <summary>
+            Get All Doctors For(Admin, Web)
+            </summary>
+            <param name="orderByAsc"></param>
+            <param name="sortBy">Name, ReferalNumber</param>
+            <param name="search"></param>
+            <returns>Return List of Doctors</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.GetAllForDropdownAsync">
+            <summary>
+            Get All Doctors (NAme,ID) For Dropsown (For Admin)
+            </summary>
+            <returns>Return List of Doctors(ID, Name)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.GetAllForHomeAsync">
+            <summary>
+            Get All Doctors (Name,ID, SocialLinks,First Discription) For for homepage (For Web)
+            </summary>
+            <returns>Return List of Doctors(Name,ID, SocialLinks,First Discription)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.GetAllForSliderAsync">
+            <summary>
+            Get All Doctors (Name,ID, Image) For for homepage (For Web)
+            </summary>
+            <returns>Return List of Doctors(Name,ID, Image)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Doctor With Patients, Blogs By Doctor ID (for Admin, Web)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return Doctor Details with Patients, Blogs </returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.IsExistByIDAsync(System.Guid)">
+            <summary>
+            Check Doctor exist by  ID(for admin)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return True, False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.AddAsync(DentalCenterAPI.Models.Doctor.Basic.DoctorBasicModel)">
+            <summary>
+            Add Doctor (for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.UpdateAsync(DentalCenterAPI.Models.Doctor.Basic.DoctorBasicModel)">
+            <summary>
+            Update Doctor (for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.DoctorService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete With Patients, Blogs(for admin)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.GetAllAsync(System.Boolean,System.String,System.String)">
+            <summary>
+            Get All Doctors For(Admin, Web)
+            </summary>
+            <param name="orderByAsc"></param>
+            <param name="sortBy">Name, ReferalNumber</param>
+            <param name="search"></param>
+            <returns>Return List of Doctors</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.GetAllForDropdownAsync">
+            <summary>
+            Get All Doctors (NAme,ID) For Dropsown (For Admin)
+            </summary>
+            <returns>Return List of Doctors(ID, Name)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.GetAllForHomeAsync">
+            <summary>
+            Get All Doctors (Name,ID, SocialLinks,First Discription) For for homepage (For Web)
+            </summary>
+            <returns>Return List of Doctors(Name,ID, SocialLinks,First Discription)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.GetAllForSliderAsync">
+            <summary>
+            Get All Doctors (Name,ID, Image) For for homepage (For Web)
+            </summary>
+            <returns>Return List of Doctors(Name,ID, Image)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get Doctor With Patients, Blogs By Doctor ID (for Admin, Web)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return Doctor Details with Patients, Blogs </returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.IsExistByIDAsync(System.Guid)">
+            <summary>
+            Check Doctor exist by  ID(for admin)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return True, False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.AddAsync(DentalCenterAPI.Models.Doctor.Basic.DoctorBasicModel)">
+            <summary>
+            Add Doctor (for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.UpdateAsync(DentalCenterAPI.Models.Doctor.Basic.DoctorBasicModel)">
+            <summary>
+            Update Doctor (for admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Doctor.IDoctorService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete With Patients, Blogs(for admin)
+            </summary>
+            <param name="doctorID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSectionImage.FamousSectionImageService.AddAndDeleteAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.FamousSection.Business.FamousSectionImageBusinessModel})">
+            <summary>
+            Update FamousSectionImages by delete list then add it again  (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSectionImage.FamousSectionImageService.DeleteByFamousSectionIDAsync(System.Guid)">
+            <summary>
+            Delete List By famousSectionID (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSectionImage.FamousSectionImageService.DeleteByFamousSectionImageIDAsync(System.Guid)">
+            <summary>
+            Delete By famousSectionImageID (For Admin)
+            </summary>
+            <param name="famousSectionImageID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSectionImage.IFamousSectionImageService.AddAndDeleteAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.FamousSection.Business.FamousSectionImageBusinessModel})">
+            <summary>
+            Update FamousSectionImages by delete list then add it again  (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSectionImage.IFamousSectionImageService.DeleteByFamousSectionIDAsync(System.Guid)">
+            <summary>
+            Delete List By famousSectionID (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSectionImage.IFamousSectionImageService.DeleteByFamousSectionImageIDAsync(System.Guid)">
+            <summary>
+            Delete By famousSectionImageID (For Admin)
+            </summary>
+            <param name="famousSectionImageID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.FamousSectionService.GetAllAsync(System.String)">
+            <summary>
+            Get All FamousSection Ordered by Date desc (For Web, admin)
+            </summary>
+            <param name="search">name</param>
+            <returns>Return List of FamousSection Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.FamousSectionService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get FamousSection Details by ID with list of FamousSection images (For Web, Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return FamousSection Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.FamousSectionService.IsExistAsync(System.Guid)">
+            <summary>
+            Check FamousSection Existance (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.FamousSectionService.AddAsync(DentalCenterAPI.Models.FamousSection.Business.FamousSectionBusinessModel)">
+            <summary>
+            Add FamousSection with list of FamousSection Images (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added FamousSectionID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.FamousSectionService.UpdateAsync(DentalCenterAPI.Models.FamousSection.Business.FamousSectionBusinessModel)">
+            <summary>
+            Update FamousSection Details with list of FamousSectionImages by delete list then add it again  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.FamousSectionService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete FamousSection with list of FamousSection images (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.IFamousSectionService.GetAllAsync(System.String)">
+            <summary>
+            Get All FamousSection Ordered by Name (For Web, admin)
+            </summary>
+            <param name="search">name</param>
+            <returns>Return List of FamousSection Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.IFamousSectionService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get FamousSection Details by ID with list of FamousSection images (For Web, Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return FamousSection Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.IFamousSectionService.IsExistAsync(System.Guid)">
+            <summary>
+            Check FamousSection Existance (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.IFamousSectionService.AddAsync(DentalCenterAPI.Models.FamousSection.Business.FamousSectionBusinessModel)">
+            <summary>
+            Add FamousSection with list of FamousSection Images (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added FamousSectionID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.IFamousSectionService.UpdateAsync(DentalCenterAPI.Models.FamousSection.Business.FamousSectionBusinessModel)">
+            <summary>
+            Update FamousSection Details with list of FamousSectionImages by delete list then add it again  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.FamousSection.IFamousSectionService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete FamousSection with list of FamousSection images (For Admin)
+            </summary>
+            <param name="famousSectionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.File.FileService.UploadFileAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save file to Server at resourses folder 
+            </summary>
+            <param name="file"></param>
+            <returns>Return saved file path</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.File.FileService.UploadFilesAsync(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Save files to Server at resourses folder 
+            </summary>
+            <param name="files"></param>
+            <returns>Return List of aved files paths</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.File.IFileService.UploadFileAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save file to Server at resourses folder 
+            </summary>
+            <param name="file"></param>
+            <returns>Return saved file path</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.File.IFileService.UploadFilesAsync(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Save files to Server at resourses folder 
+            </summary>
+            <param name="files"></param>
+            <returns>Return List of aved files paths</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.GalleryService.GetAllAsync(System.String,System.String)">
+            <summary>
+            Get List of Gallery with search by Type, Sort By Date Asc, Desc(For Admin, Web)
+            </summary>
+            <param name="search">By Type</param>
+            <param name="sortBy">ASC, Desc By Date</param>
+            <returns>Return List of Gallery</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.GalleryService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Gallery Existance (For Admin)
+            </summary>
+            <param name="galleryID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.GalleryService.AddAsync(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.Gallery.Basic.GalleryBasicModel})">
+            <summary>
+            Add List of Gallery Images by type (For Admin)
+            </summary>
+            <param name="type"></param>
+            <param name="gallerys"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.GalleryService.UpdateAsync(System.Guid,System.String)">
+            <summary>
+            Update Gallery Image Type (For Admin)
+            </summary>
+            <param name="galleryID"></param>
+            <param name="type"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.GalleryService.UpdateIsFavoriteAsync(System.Guid,System.String,System.Boolean)">
+            <summary>
+            Update Gallery Image isFavorite (For Admin)
+            </summary>
+            <param name="galleryID"></param>
+            <param name="type"></param>
+            <param name="isFavorite"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.GalleryService.DeleteAsync(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.Gallery.Basic.GalleryBasicModel})">
+            <summary>
+            Delete List of Gallery  (For Admin)
+            </summary>
+            <param name="gallerys"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.IGalleryService.GetAllAsync(System.String,System.String)">
+            <summary>
+            Get List of Gallery with search by Type, Sort By Date Asc, Desc(For Admin, Web)
+            </summary>
+            <param name="search">By Type</param>
+            <param name="sortBy">ASC, Desc By Date</param>
+            <returns>Return List of Gallery</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.IGalleryService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Gallery Existance (For Admin)
+            </summary>
+            <param name="galleryID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.IGalleryService.AddAsync(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.Gallery.Basic.GalleryBasicModel})">
+            <summary>
+            Add List of Gallery Images by type (For Admin)
+            </summary>
+            <param name="type"></param>
+            <param name="gallerys"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.IGalleryService.UpdateAsync(System.Guid,System.String)">
+            <summary>
+            Update Gallery Image Type (For Admin)
+            </summary>
+            <param name="galleryID"></param>
+            <param name="type"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.IGalleryService.UpdateIsFavoriteAsync(System.Guid,System.String,System.Boolean)">
+            <summary>
+            Update Gallery Image isFavorite (For Admin)
+            </summary>
+            <param name="galleryID"></param>
+            <param name="type"></param>
+            <param name="isFavorite"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Gallery.IGalleryService.DeleteAsync(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.Gallery.Basic.GalleryBasicModel})">
+            <summary>
+            Delete List of Gallery  (For Admin)
+            </summary>
+            <param name="gallerys"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.GetAllAsync(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Get All Happy Patients With Two Lists (Favorite, All Videos) Ordered by Date, Favorite (For Web)
+            </summary>
+            <param name="type">video, review</param>
+            <param name="isFavorite"></param>
+            <returns>Return Two Lists of Happy Paitents Favorite, Normal</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.GetAllAsync(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Get All Happy Patients By Type(video, review) Ordered by InsertDate(By Default), IsFavorite, search (For Admin)
+            </summary>
+            <param name="type">video, review</param>
+            <param name="sortBy">insertdate, isfavorite, name, job, comment</param>
+            <param name="search">name, job, comment</param>
+            <param name="orderByAsc">True, False</param>
+            <returns>Return Two Lists of Happy Paitents</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.GetByIDAsync(System.Guid,System.String)">
+            <summary>
+            Get Happy Patient By ID (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <param name="type"></param>
+            <returns>Return Happy Patient Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.GetRendomBTypeAsync(System.String)">
+            <summary>
+            Get Random Happy Patient By Type(For Web)
+            </summary>
+            <param name="type"></param>
+            <returns>Return Random Happy Patient Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Happy Patient Existance (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.AddAsync(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.HappyPatient.Basic.HappyPatientBasicModel})">
+            <summary>
+            Add List of Happy Patients  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.UpdateIsFavoriteAsync(System.Guid,System.Boolean)">
+            <summary>
+            Update Happy Patient IsFavorite  (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <param name="isFavorite"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.UpdateAsync(DentalCenterAPI.Models.HappyPatient.Basic.HappyPatientBasicModel)">
+            <summary>
+            Update Happy Patient  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.HappyPatientService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Happy Patient (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.GetAllAsync(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Get All Happy Patients With Two Lists (Favorite, All Videos) Ordered by Date, Favorite (For Web)
+            </summary>
+            <param name="type">video, review</param>
+            <param name="isFavorite"></param>
+            <returns>Return Two Lists of Happy Paitents Favorite, Normal</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.GetAllAsync(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Get All Happy Patients By Type(video, review) Ordered by InsertDate(By Default), IsFavorite, search (For Admin)
+            </summary>
+            <param name="type">video, review</param>
+            <param name="sortBy">insertdate, isfavorite, name, job, comment</param>
+            <param name="search">name, job, comment</param>
+            <param name="orderByAsc">True, False</param>
+            <returns>Return Two Lists of Happy Paitents</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.GetByIDAsync(System.Guid,System.String)">
+            <summary>
+            Get Happy Patient By ID (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <param name="type"></param>
+            <returns>Return Happy Patient Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.GetRendomBTypeAsync(System.String)">
+            <summary>
+            Get Random Happy Patient By Type(For Web)
+            </summary>
+            <param name="type"></param>
+            <returns>Return Random Happy Patient Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Happy Patient Existance (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.AddAsync(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.HappyPatient.Basic.HappyPatientBasicModel})">
+            <summary>
+            Add List of Happy Patients  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.UpdateIsFavoriteAsync(System.Guid,System.Boolean)">
+            <summary>
+            Update Happy Patient IsFavorite  (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <param name="isFavorite"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.UpdateAsync(DentalCenterAPI.Models.HappyPatient.Basic.HappyPatientBasicModel)">
+            <summary>
+            Update Happy Patient  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HappyPatient.IHappyPatientService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Happy Patient (For Admin)
+            </summary>
+            <param name="happyPatientID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HomeCounter.HomeCounterService.GetFirstAsync">
+            <summary>
+            Get Fisrt Record At Home Counter(For Admin)
+            </summary>
+            <returns>Return Home Counter Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HomeCounter.HomeCounterService.UpdateAsync(DentalCenterAPI.Models.HomeCounter.Basic.HomeCounterBasicModel)">
+            <summary>
+            Update Home Counter BY ID(For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HomeCounter.IHomeCounterService.GetFirstAsync">
+            <summary>
+            Get Fisrt Record At Home Counter(For Admin)
+            </summary>
+            <returns>Return Home Counter Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HomeCounter.IHomeCounterService.UpdateAsync(DentalCenterAPI.Models.HomeCounter.Basic.HomeCounterBasicModel)">
+            <summary>
+            Update Home Counter BY ID(For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HomePage.HomePageService.GetAllAsync">
+            <summary>
+            Get Home Page (Counters, Favorite Gallery, Home Doctors, Favorite HappyPatients Revirews) (For Web)
+            </summary>
+            <returns>Return Home Page Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.HomePage.IHomePageService.GetAllAsync">
+            <summary>
+            Get Home Page (Counters, Favorite Gallery, Home Doctors, Favorite HappyPatients Revirews) (For Web)
+            </summary>
+            <returns>Return Home Page Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.NewsImage.INewsImageService.AddAndDeleteAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.NewsImages.Business.NewsImagesBusinessModel})">
+            <summary>
+            Update newsImage by delete list then add it again  (For Admin)
+            </summary>
+            <param name="newsID"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.NewsImage.NewsImageService.AddAndDeleteAsync(System.Guid,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.NewsImages.Business.NewsImagesBusinessModel})">
+            <summary>
+            Update newsImage by delete list then add it again  (For Admin)
+            </summary>
+            <param name="newsID"></param>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.INewsService.GetAllAsync">
+            <summary>
+            Get All News Ordered by Date desc (For Web, admin)
+            </summary>
+            <returns>Return List of News Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.INewsService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get News Details by ID with list of news images (For Web, Admin)
+            </summary>
+            <param name="newsID"></param>
+            <returns>Return News Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.INewsService.IsExistAsync(System.Guid)">
+            <summary>
+            Check News Existance (For Admin)
+            </summary>
+            <param name="newsID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.INewsService.AddAsync(DentalCenterAPI.Models.News.Business.NewsBusinessModel)">
+            <summary>
+            Add News with list of News Images (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added NewsID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.INewsService.UpdateAsync(DentalCenterAPI.Models.News.Business.NewsBusinessModel)">
+            <summary>
+            Update news Details with list of newsimages by delete list then add it again  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.INewsService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete news with list of news images (For Admin)
+            </summary>
+            <param name="newsID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.NewsService.GetAllAsync">
+            <summary>
+            Get All News Ordered by Date desc (For Web, admin)
+            </summary>
+            <returns>Return List of News Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.NewsService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get News Details by ID with list of news images (For Web, Admin)
+            </summary>
+            <param name="newsID"></param>
+            <returns>Return News Details with list of Images</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.NewsService.IsExistAsync(System.Guid)">
+            <summary>
+            Check News Existance (For Admin)
+            </summary>
+            <param name="newsID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.NewsService.AddAsync(DentalCenterAPI.Models.News.Business.NewsBusinessModel)">
+            <summary>
+            Add News with list of News Images (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Added NewsID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.NewsService.UpdateAsync(DentalCenterAPI.Models.News.Business.NewsBusinessModel)">
+            <summary>
+            Update news Details with list of newsimages by delete list then add it again  (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.News.NewsService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete news with list of news images (For Admin)
+            </summary>
+            <param name="newsID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.IServiceImageService.GetAllAsync(System.String,System.String)">
+            <summary>
+            Get List of ServiceImages with search by ServiceName, Sort By Date Asc, Desc(For Admin, Web)
+            </summary>
+            <param name="search">By serviceName</param>
+            <param name="sortBy">ASC, Desc By Date</param>
+            <returns>Return List of ServiceImages</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.IServiceImageService.IsExistAsync(System.Guid)">
+            <summary>
+            Check ServiceImage Existance By ServiceImagesID (For Admin)
+            </summary>
+            <param name="serviceImageID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.IServiceImageService.AddAsync(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel})">
+            <summary>
+            Add List of ServiceImages by ServiceName (For Admin)
+            </summary>
+            <param name="serviceName"></param>
+            <param name="serviceImages"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.IServiceImageService.UpdateAsync(DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel)">
+            <summary>
+            Update ServiceImages ServiceName,Before, After Images Path (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.IServiceImageService.DeleteAsync(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel})">
+            <summary>
+            Delete List of ServiceImages By ServiceImagesIDs(For Admin)
+            </summary>
+            <param name="ServiceImages"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.ServiceImageService.GetAllAsync(System.String,System.String)">
+            <summary>
+            Get List of ServiceImages with search by ServiceName, Sort By Date Asc, Desc(For Admin, Web)
+            </summary>
+            <param name="search">By serviceName</param>
+            <param name="sortBy">ASC, Desc By Date</param>
+            <returns>Return List of ServiceImages</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.ServiceImageService.IsExistAsync(System.Guid)">
+            <summary>
+            Check ServiceImage Existance By ServiceImagesID (For Admin)
+            </summary>
+            <param name="serviceImageID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.ServiceImageService.AddAsync(System.String,System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel})">
+            <summary>
+            Add List of ServiceImages by ServiceName (For Admin)
+            </summary>
+            <param name="serviceName"></param>
+            <param name="serviceImages"></param>
+            <returns>Return Added Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.ServiceImageService.UpdateAsync(DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel)">
+            <summary>
+            Update ServiceImages ServiceName,Before, After Images Path (For Admin)
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.ServiceImage.ServiceImageService.DeleteAsync(System.Collections.Generic.IEnumerable{DentalCenterAPI.Models.ServiceImage.Basic.ServiceImageBasicModel})">
+            <summary>
+            Delete List of ServiceImages By ServiceImagesIDs (For Admin)
+            </summary>
+            <param name="ServiceImages"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.GetAllAsync(System.String,System.Boolean)">
+            <summary>
+            Get List of Services with search
+            </summary>
+            <param name="search">name, info</param>
+            <param name="sortByAsc">name = True, false</param>
+            <returns>Return List of Services</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get of Service By ID
+            </summary>
+            <param name="serviceID"></param>
+            <returns>Return Service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.GetByNameAsync(System.String)">
+            <summary>
+            Get of Service By Name
+            </summary>
+            <param name="name"></param>
+            <returns>Return Service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.IsExistByIDAsync(System.Guid)">
+            <summary>
+            Check Service Existance By ID
+            </summary>
+            <param name="serviceID"></param>
+            <returns>Return True or False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.IsExistByNameAsync(System.String)">
+            <summary>
+            Check Service Existance By Name
+            </summary>
+            <param name="name"></param>
+            <returns>Return True or False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.IsExistByNameAsync(System.Guid,System.String)">
+            <summary>
+            Check Service Existance By Name, And exclude Current ID
+            </summary>
+            <param name="serviceID"></param>
+            <param name="name"></param>
+            <returns>Return True or False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.AddAsync(DentalCenterAPI.Models.Service.Basic.ServiceBasicModel)">
+            <summary>
+            Add Service 
+            </summary>
+            <param name="entity"></param>
+            <returns>Return Added Row GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.UpdateAsync(DentalCenterAPI.Models.Service.Basic.ServiceBasicModel)">
+            <summary>
+            Update Service 
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.IServiceService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Service 
+            </summary>
+            <param name="serviceID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.GetAllAsync(System.String,System.Boolean)">
+            <summary>
+            Get List of Services with search
+            </summary>
+            <param name="search">name, info</param>
+            <param name="sortByAsc">name = True, false</param>
+            <returns>Return List of Services</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.GetByIDAsync(System.Guid)">
+            <summary>
+            Get of Service By ID
+            </summary>
+            <param name="serviceID"></param>
+            <returns>Return Service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.GetByNameAsync(System.String)">
+            <summary>
+            Get of Service By Name
+            </summary>
+            <param name="name"></param>
+            <returns>Return Service Details</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.IsExistByIDAsync(System.Guid)">
+            <summary>
+            Check Service Existance By ID
+            </summary>
+            <param name="serviceID"></param>
+            <returns>Return True or False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.IsExistByNameAsync(System.String)">
+            <summary>
+            Check Service Existance By Name
+            </summary>
+            <param name="name"></param>
+            <returns>Return True or False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.IsExistByNameAsync(System.Guid,System.String)">
+            <summary>
+            Check Service Existance By Name, And exclude Current ID
+            </summary>
+            <param name="serviceID"></param>
+            <param name="name"></param>
+            <returns>Return True or False</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.AddAsync(DentalCenterAPI.Models.Service.Basic.ServiceBasicModel)">
+            <summary>
+            Add Service 
+            </summary>
+            <param name="entity"></param>
+            <returns>Return Added Row GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.UpdateAsync(DentalCenterAPI.Models.Service.Basic.ServiceBasicModel)">
+            <summary>
+            Update Service 
+            </summary>
+            <param name="model"></param>
+            <returns>Return Updated Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Service.ServiceService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Service 
+            </summary>
+            <param name="serviceID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.ISubscribtionService.GetAllAsync">
+            <summary>
+            Get List of Subscribtions (For Admin)
+            </summary>
+            <returns>Return List of Subscribtions</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.ISubscribtionService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Subscribtion Existance (For Admin)
+            </summary>
+            <param name="subscribtionID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.ISubscribtionService.IsEmailExistAsync(System.String)">
+            <summary>
+            Check Subscribtion email Existance (For Admin)
+            </summary>
+            <param name="email"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.ISubscribtionService.AddAsync(DentalCenterAPI.Models.Subscribtion.Basic.SubscribtionBasicModel)">
+            <summary>
+            Add Subscribtion  (For Admin, Web)
+            </summary>
+            <param name="subscribtion"></param>
+            <returns>Return Added Subscribtion GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.ISubscribtionService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Subscribtion (For Admin)
+            </summary>
+            <param name="subscribtionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.SubscribtionService.GetAllAsync">
+            <summary>
+            Get List of Subscribtions (For Admin)
+            </summary>
+            <returns>Return List of Subscribtions</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.SubscribtionService.IsExistAsync(System.Guid)">
+            <summary>
+            Check Subscribtion Existance (For Admin)
+            </summary>
+            <param name="subscribtionID"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.SubscribtionService.IsEmailExistAsync(System.String)">
+            <summary>
+            Check Subscribtion email Existance (For Admin)
+            </summary>
+            <param name="email"></param>
+            <returns>Return (True, False)</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.SubscribtionService.AddAsync(DentalCenterAPI.Models.Subscribtion.Basic.SubscribtionBasicModel)">
+            <summary>
+            Add Subscribtion  (For Admin, Web)
+            </summary>
+            <param name="subscribtion"></param>
+            <returns>Return Added Subscribtion GUID</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Services.Subscribtion.SubscribtionService.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Subscribtion (For Admin)
+            </summary>
+            <param name="subscribtionID"></param>
+            <returns>Return Deleted Rows Count</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetDatabaseConnectionstring">
+            <summary>
+            Get Database Connectionstring
+            </summary>
+            <returns>Return Connectionstring as string</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetTimeZone">
+            <summary>
+            Get TimeZone
+            </summary>
+            <returns>Return TimeZone String</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetDateTimeByTimeZone">
+            <summary>
+            Get DateTime With TimeZone
+            </summary>
+            <returns>Return DateTime</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetJWTTokenSecretKey">
+            <summary>
+            Get JWT SecretKey
+            </summary>
+            <returns>Return JWT SecretKey String</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetJWTTokenIssuer">
+            <summary>
+             Get JWT Token Issuer
+            </summary>
+            <returns>Return JWT TokenIssuer String</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetJWTTokenExpireTime">
+            <summary>
+            Get JWT ExpireTime
+            </summary>
+            <returns>Return JWT ExpireTime String</returns>
+        </member>
+        <member name="M:DentalCenterAPI.Utility.Utility.GetSiteURL">
+            <summary>
+            Get Site URL
+            </summary>
+            <returns>Return Site URL String</returns>
+        </member>
+    </members>
+</doc>

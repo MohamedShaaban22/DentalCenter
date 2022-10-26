@@ -1,0 +1,39 @@
+2022-01-15 00:12:46,581  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2022-01-15 00:12:46,654  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2022-01-15 00:12:46,658  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-15 00:12:46,662  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-15 00:12:46,666  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2022-01-15 00:13:26,640  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2022-01-15 00:13:26,713  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2022-01-15 00:13:26,716  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-15 00:13:26,720  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-15 00:13:26,723  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 2022-01-15 00:13:30,528 DEBUG DentalCenterAPI.Configurations.Logging.Logger.Debug [24] - MESSAGE: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'homedisplay'.
+Invalid column name 'doctorid'.
+Invalid column name 'name'.
+Invalid column name 'firstdiscription'.
+Invalid column name 'referalnumber'.
+Invalid column name 'homeimagepath'.
+Invalid column name 'tiktokurl'.
+Invalid column name 'facebookurl'.
+Invalid column name 'instgramurl'.
+Invalid column name 'linkedinurl'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DentalCenterAPI.Repository.HomePage.HomePageRepository.GetAllAsync() in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Repository\HomePage\HomePageRepository.cs:line 30
+   at DentalCenterAPI.Services.HomePage.HomePageService.GetAllAsync() in E:\Freelance\DentalCenterAPI\DentalCenterAPI\Services\HomePage\HomePageService.cs:line 25
+ClientConnectionId:08f1ed94-64a1-45f5-92b2-37072e381729
+Error Number:207,State:1,Class:16
+ 2022-01-15 00:14:33,552  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2022-01-15 00:14:33,624  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2022-01-15 00:14:33,628  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-01-15 00:14:33,631  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-01-15 00:14:33,635  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: E:\Freelance\DentalCenterAPI
+ 
